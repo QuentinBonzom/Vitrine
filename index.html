@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quentin BONZOM élève à la Wild Code School</title>
+    <title>Quentin BONZOM</title>
     <meta name="description" content="Page personnelle de Quentin BONZOM inspirée par la Wild Code School.">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -19,6 +20,26 @@
             color: white;
             font-family: 'Raleway', sans-serif;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Ajout de bandes noires */
+        body::before, body::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 15vh;
+            background: black;
+            opacity: 0.7;
+        }
+        
+        body::before {
+            top: 0;
+        }
+        
+        body::after {
+            bottom: 0;
         }
         
         h1 {
@@ -28,9 +49,25 @@
             padding: 20px;
             border-radius: 10px;
         }
+        
+        img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Quentin BONZOM élève à la Wild Code School</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Wild_Code_School_logo.png/320px-Wild_Code_School_logo.png" alt="Logo Wild Code School">
+    <h1>Quentin BONZOM</h1>
+    <p>Étudiant à la Wild Code School - Promotion du 03/03/2025</p>
+    <p>Ancien gestionnaire de site e-commerce et créateur de site vitrine, je me reconvertis en tant que Développeur Web Full-Stack. Passionné par le web et fort de compétences transférables, je suis prêt à relever de nouveaux défis !</p>
 </body>
 </html>
